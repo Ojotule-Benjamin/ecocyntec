@@ -36,7 +36,7 @@ const Industries = () => {
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor pb-5">
           Industries We Serve
         </h2>
-        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-textColor text-justify md:text-center">
+        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-textColor text-center md:text-center">
           At Ecocyntec, we take pride in our leadership role in the
           ever-evolving energy landscape, delivering unparalleled products,
           solutions, and services that cater to diverse client needs. With a
@@ -59,7 +59,7 @@ const Industries = () => {
               <h3 className=" font-CrimsonText font-bold text-2xl text-center text-primaryColor">
                 {card.title}
               </h3>
-              <p className=" font-CrimsonText font-semibold text-base text-center ">
+              <p className=" font-CrimsonText font-semibold text-textColor text-base text-center ">
                 {card.desc}
               </p>
 

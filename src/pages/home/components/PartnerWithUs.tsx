@@ -4,9 +4,9 @@ import CustomButton from "../../../components/CustomButton";
 const PartnerWithUs = () => {
   return (
     <div
-      className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 my-20"
+      className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 my-10"
       style={{
-        backgroundImage: `url(${require("../../../assets/hero4.png")})`, // Use 'url()' to specify the background image
+        backgroundImage: `url(${require("../../../assets/PartnerWithUs.png")})`, // Use 'url()' to specify the background image
         backgroundSize: "cover", // Optional: Adjust the background size based on your requirements
       }}
     >

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ProjectCard from "../../components/ProjectCard";
 import Hero from "../../components/Hero";
-import VisionStatement from "../home/components/VisionStatement";
-import Industries from "../home/components/Industries";
+
 import CustomButton from "../../components/CustomButton";
 
 const projectData = [

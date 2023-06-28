@@ -32,7 +32,7 @@ const projectData = [
 const OurProjects = () => {
   return (
     <div className=" w-full h-auto flex flex-col items-center justify-center gap-4 py-10 ">
-      <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center pb-5">
+      <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center ">
         Our Projects
       </h2>
 

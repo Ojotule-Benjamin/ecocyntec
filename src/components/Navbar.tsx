@@ -4,6 +4,7 @@ import SortOutlinedIcon from "@mui/icons-material/SortOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import { EcocyntectLogo } from "../assets/svgs/icon";
 
 const navLinks = [
   { name: "Home", to: "/" },
@@ -20,18 +21,17 @@ const Navbar = () => {
     setIsOpen((prev) => !prev);
   };
   const currentRoute = window.location.pathname;
-  console.log(currentRoute);
 
   return (
     <div className=" w-full h-32  bg-white  z-10 fixed top-0 bottom-0">
       <div className=" flex items-center justify-between px-2 md:px-8">
         <div className="flex w-[200px] h-[112px]">
           <Link to={"/"}>
-            <img src={require("../assets/ecocyntec.png")} alt="" />
+            <EcocyntectLogo />
           </Link>
         </div>
 
-        <ul className=" hidden md:flex items-center gap-4 ">
+        <ul className=" hidden md:flex items-center gap-8">
           {navLinks.map(({ name, to }) => (
             <li key={name + to}>
               <Link

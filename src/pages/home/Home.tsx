@@ -8,6 +8,8 @@ import Industries from "./components/Industries";
 import OurExpertise from "./components/OurExpertise";
 import OurProjects from "./components/OurProjects";
 import PartnerWithUs from "./components/PartnerWithUs";
+import OurWorkCultures from "./components/OurWorkCultures";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -36,8 +38,9 @@ const Home = () => {
       <Industries />
       <OurExpertise />
       <OurProjects />
-      <h1>work culture</h1>
+      <OurWorkCultures />
       <PartnerWithUs />
+      <Footer />
     </div>
   );
 };

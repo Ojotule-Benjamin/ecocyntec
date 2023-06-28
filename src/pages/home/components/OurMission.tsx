@@ -8,7 +8,7 @@ const OurMission = () => {
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-white">
           Our Mission
         </h2>
-        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-white text-justify md:text-center">
+        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-white text-center">
           At Ecocyntec, our vision drives us to be the leading energy services
           company globally, setting a benchmark for excellence and customer
           satisfaction. We aspire to be the trusted partner for all your energy

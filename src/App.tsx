@@ -8,12 +8,19 @@ import AboutUs from "./pages/aboutUs/AboutUs";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="w-full h-full relative top-0">
       <Navbar />
       <Outlet />
+      <div
+        className=" fixed -bottom-0 left-0 right-0"
+        //style={{ bottom: "60" }}
+      >
+        {/* <Footer /> */}
+      </div>
     </div>
   );
 };
