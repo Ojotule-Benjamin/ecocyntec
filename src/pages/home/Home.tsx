@@ -5,6 +5,9 @@ import CustomButton from "../../components/CustomButton";
 import OurMission from "./components/OurMission";
 
 import Industries from "./components/Industries";
+import OurExpertise from "./components/OurExpertise";
+import OurProjects from "./components/OurProjects";
+import PartnerWithUs from "./components/PartnerWithUs";
 
 const Home = () => {
   return (
@@ -30,7 +33,11 @@ const Home = () => {
       <VisionStatement />
       <OurMission />
       <VisionStatement />
-      {/* <Industries /> */}
+      <Industries />
+      <OurExpertise />
+      <OurProjects />
+      <h1>work culture</h1>
+      <PartnerWithUs />
     </div>
   );
 };

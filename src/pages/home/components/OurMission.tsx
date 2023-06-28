@@ -36,15 +36,3 @@ const OurMission = () => {
 };
 
 export default OurMission;
-
-{
-  /* <div className=" sm:w-28 sm:h-20 absolute top-0 right-8  items-start ">
-          <img src={require("../../../assets/topIcon.png")} alt="" />
-        </div> */
-}
-
-{
-  /* <div className=" hidden md:absolute bottom-0 left-0  items-start ">
-          <img src={require("../../../assets/bottomIcon.png")} alt="" />
-        </div> */
-}

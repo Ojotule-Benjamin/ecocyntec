@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectCard from "../../components/ProjectCard";
 import Hero from "../../components/Hero";
 import VisionStatement from "../home/components/VisionStatement";
-import OurMission from "../home/components/OurMission";
 import Industries from "../home/components/Industries";
 import CustomButton from "../../components/CustomButton";
 
@@ -74,9 +73,6 @@ const Projects = () => {
           />
         }
       />
-      <VisionStatement />
-      {/* <OurMission /> */}
-      <Industries />
 
       <div className="w-full flex items-center justify-between flex-wrap">
         {projectData.map(({ img, location, title, id }: IprojectData) => {

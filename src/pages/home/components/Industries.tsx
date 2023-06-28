@@ -31,15 +31,12 @@ const industriesData = [
 
 const Industries = () => {
   return (
-    <div
-      className="w-full h-[600px] flex flex-col items-center justify-center "
-      //className=" w-full h-[600px] bg-blue-800 relative"
-    >
-      <div className="flex flex-col items-center justify-center px-0 md:px-24 md:py-10">
-        <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center">
+    <div className="w-full h-auto flex flex-col items-center justify-center bg-white py-10 px-2 md:px-10 ">
+      <div className=" flex flex-col items-center justify-center md:px-24">
+        <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor pb-5">
           Industries We Serve
         </h2>
-        <p className=" font-CrimsonText font-normal text-sm leading-5 md:text-xl text-textColor text-center">
+        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-textColor text-justify md:text-center">
           At Ecocyntec, we take pride in our leadership role in the
           ever-evolving energy landscape, delivering unparalleled products,
           solutions, and services that cater to diverse client needs. With a
@@ -48,21 +45,29 @@ const Industries = () => {
           energy production, and foster sustainability for a brighter future.
         </p>
       </div>
-      <div className="w-full  md:flex justify-between ">
+      <div className="w-full flex-col md:flex-row md:flex items-center justify-between md:gap-10 my-5 md:my-10">
         {industriesData.map((card) => {
           const Icon = card.icons; // Assign the icon component to a variable
           return (
             <div
               key={card.id}
-              className=" w-80 h-72 flex flex-col items-center justify-between border-2 border-red-500"
+              className=" w-full h-96 flex flex-col items-center justify-between p-3 my-10 md:my-5 "
             >
-              <div className=" w-20 h-20">
+              <div>
                 <Icon />
               </div>
-              <div>{card.title}</div>
-              <div>{card.desc}</div>
-              <div className=" w-full flex items-center justify-center bg-gray-400">
-                <h1>{card.learnMore}</h1>
+              <h3 className=" font-CrimsonText font-bold text-2xl text-center text-primaryColor">
+                {card.title}
+              </h3>
+              <p className=" font-CrimsonText font-semibold text-base text-center ">
+                {card.desc}
+              </p>
+
+              <div className=" flex items-center justify-center ">
+                <span className=" text-5xl text-primaryColor">-</span>
+                <h1 className=" font-CrimsonText font-bold text-2xl text-primaryColor">
+                  {card.learnMore}
+                </h1>
               </div>
             </div>
           );
