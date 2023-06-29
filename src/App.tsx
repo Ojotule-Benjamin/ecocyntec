@@ -15,12 +15,6 @@ const Layout = () => {
     <div className="w-full h-full relative top-0">
       <Navbar />
       <Outlet />
-      <div
-        className=" fixed -bottom-0 left-0 right-0"
-        //style={{ bottom: "60" }}
-      >
-        {/* <Footer /> */}
-      </div>
     </div>
   );
 };

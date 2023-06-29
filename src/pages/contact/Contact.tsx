@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero";
+import Footer from "../../components/Footer";
 
 const Contact = () => {
   return (
@@ -19,6 +20,7 @@ const Contact = () => {
       <h1>Contact</h1>
       <h1>Contact</h1>
       <h1>Contact</h1>
+      <Footer />
     </div>
   );
 };

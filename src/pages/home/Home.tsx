@@ -34,7 +34,6 @@ const Home = () => {
       />
       <VisionStatement />
       <OurMission />
-      <VisionStatement />
       <Industries />
       <OurExpertise />
       <OurProjects />

@@ -109,12 +109,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div className="w-[100px] h-[62px] md:hidden bg-red-700">
-            <Link to={"/"}>
-              <img src={require("../assets/ecocyntec.png")} alt="" />
-            </Link>
-            
-          </div> */
-}
