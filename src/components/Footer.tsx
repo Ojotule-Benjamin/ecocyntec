@@ -6,13 +6,14 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
+import CustomButton from "./CustomButton";
 
 const Footer = () => {
   return (
-    <div className=" w-full h-auto md:h-[500px] md:px-8 gap-10 md:gap-20 flex flex-col md:flex-row bg-primaryColor  pb-10 ">
+    <div className=" w-full h-auto md:h-[500px] md:px-8 gap-10 md:gap-20 flex flex-col-reverse md:flex-row bg-primaryColor  pb-10 ">
       <div className="w-full md:w-[30%] px-4 md:px-0 flex flex-col md:row items-center md:items-start gap-3 md:gap-8 ">
         <Link to={"/"}>
-          <div className="flex w-[100px] md:w-[200px] md:h-[112px] ">
+          <div className="hidden md:flex w-[100px] md:w-[200px] md:h-[112px] ">
             <img
               src={require("../assets/ecocyntec.png")}
               alt=""
@@ -20,7 +21,7 @@ const Footer = () => {
             />
           </div>
         </Link>
-        <p className=" font-CrimsonText font-semibold text-sm text-white text-justify">
+        <p className=" font-CrimsonText font-semibold text-sm text-white text-center md:text-justify">
           Please don't hesitate to contact us for more information or to request
           a quote. You can also connect with us on social media to stay
           up-to-date on the latest industry news and tips. We look forward to
@@ -35,26 +36,26 @@ const Footer = () => {
 
       <div className="right w-full flex-col md:flex-row flex justify-between gap-5 md:gap-0 pt-2 ">
         <div className="contact w-full flex flex-col items-center gap-3 md:gap-16 px-4 md:px-0 ">
-          <h3 className=" font-CrimsonText font-semibold text-2xl text-white pt-0 md:pt-8">
+          <h3 className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white pt-0 md:pt-8">
             Contact
           </h3>
 
           <div className=" w-full flex items-center gap-5 ">
             <FmdGoodOutlinedIcon style={{ color: "white", fontSize: "30px" }} />
             <div>
-              <h3 className=" font-CrimsonText font-bold text-lg md:text-2xl text-white ">
+              <h3 className=" font-CrimsonText font-bold text-sm md:text-2xl text-white ">
                 Head Office
               </h3>
-              <address className=" font-CrimsonText font-semibold text-sm md:text-lg text-white">
+              <p className=" font-CrimsonText font-semibold text-xs md:text-lg text-white">
                 14 Chestnut Close, Northern Foreshore, Lekki, Lagos
-              </address>
+              </p>
             </div>
           </div>
 
           <div className=" w-full flex items-center gap-5 ">
             <MailOutlinedIcon style={{ color: "white", fontSize: "30px" }} />
             <div>
-              <h3 className=" font-CrimsonText font-bold text-lg  md:text-2xl text-white">
+              <h3 className=" font-CrimsonText font-bold text-sm md:text-2xl text-white">
                 Email
               </h3>
               <a
@@ -67,9 +68,9 @@ const Footer = () => {
           </div>
 
           <div className=" w-full flex items-center gap-5 ">
-            <MailOutlinedIcon style={{ color: "white", fontSize: "30px" }} />
+            <PhoneOutlinedIcon style={{ color: "white", fontSize: "30px" }} />
             <div>
-              <h3 className=" font-CrimsonText font-bold text-lg  md:text-2xl text-white">
+              <h3 className=" font-CrimsonText font-bold text-sm md:text-2xl text-white">
                 Phone Number
               </h3>
               <a
@@ -83,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="company w-full flex flex-col items-center gap-3 md:gap-16">
-          <h1 className=" font-CrimsonText font-semibold text-2xl text-white pt-0 md:pt-8">
+          <h1 className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white pt-0 md:pt-8">
             Company
           </h1>
           <div className="w-full h-1/2 px-2 md:px-0 flex flex-row md:flex-col items-center justify-between ">
@@ -115,17 +116,18 @@ const Footer = () => {
         </div>
 
         <div className="subcribe w-full flex flex-col items-center gap-3 md:gap-16">
-          <h1 className=" font-CrimsonText font-semibold text-2xl text-white pt-0 md:pt-8">
+          <h1 className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white pt-0 md:pt-8">
             Subscribe To Our Newsletter
           </h1>
-          <div className="w-full h-1/2 px-2 md:px-0 flex flex-col md:flex-col items-center gap-5 md:gap-10 ">
+          <div className="w-full h-1/2 px-2 md:px-0 flex flex-col md:flex-col items-center gap-5  ">
             <input
-              className=" w-full h-14 md:h-20 bg-white text-textColor pl-3 outline-none "
+              className=" w-full h-12 md:h-14 bg-white text-textColor pl-3 outline-none "
               placeholder="Email"
             />
-            <div className=" w-full h-14 md:h-20 flex items-center justify-center text-white bg-textColor ">
-              Subscribe
-            </div>
+            <CustomButton
+              title="Subscribe"
+              className=" w-full h-12 md:h-14 flex items-center justify-center text-white bg-textColor hover:bg-white hover:text-textColor rounded-none"
+            />
           </div>
         </div>
       </div>

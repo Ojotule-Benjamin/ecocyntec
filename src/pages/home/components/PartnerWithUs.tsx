@@ -6,8 +6,8 @@ const PartnerWithUs = () => {
     <div
       className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 my-10"
       style={{
-        backgroundImage: `url(${require("../../../assets/PartnerWithUs.png")})`, // Use 'url()' to specify the background image
-        backgroundSize: "cover", // Optional: Adjust the background size based on your requirements
+        backgroundImage: `url(${require("../../../assets/PartnerWithUs.png")})`,
+        backgroundSize: "cover",
       }}
     >
       <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-white text-center">
@@ -20,7 +20,10 @@ const PartnerWithUs = () => {
         further enhance our collective offerings and seize upcoming
         opportunities.
       </p>
-      <CustomButton title="Contact Us" />
+      <CustomButton
+        title="Contact Us"
+        className=" hover:bg-white hover:text-textColor "
+      />
     </div>
   );
 };

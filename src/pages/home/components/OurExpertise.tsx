@@ -8,7 +8,7 @@ const OurExpertise = () => {
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor pb-5">
           Our Expertise
         </h2>
-        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-textColor text-justify md:text-center">
+        <p className=" pb-5 font-CrimsonText font-normal text-[12px] leading-5 md:text-xl text-textColor text-center">
           We provide engineering and operations support services across various
           production facilities including but not limited to oil, gas and
           produced water processing facilities:

@@ -13,7 +13,7 @@ const OurWorkCultureCard: React.FC<OurWorkCultureCardProps> = ({
 }) => {
   return (
     <div className=" w-full mx-auto md:h-64 md:w-96 p-2 flex items-center gap-2 md:gap-4 ">
-      <div className="">{icon}</div>
+      <div className=" hidden md:flex">{icon}</div>
       <div className=" ">
         <h2 className=" font-CrimsonText font-bold text-xl md:text-3xl text-primaryColor">
           {title}
