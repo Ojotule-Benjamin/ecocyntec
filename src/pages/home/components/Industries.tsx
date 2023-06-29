@@ -4,6 +4,7 @@ import {
   IndustryIcon2,
   IndustryIcon3,
 } from "../../../assets/svgs/icon";
+import { useNavigate } from "react-router-dom";
 
 const industriesData = [
   {
@@ -30,8 +31,13 @@ const industriesData = [
 ];
 
 const Industries = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/services");
+  };
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center bg-white py-10 px-2 md:px-10 ">
+    <div className="w-full h-auto flex flex-col items-center justify-center bg-backgroundColor py-10 px-2 md:px-10 ">
       <div className=" flex flex-col items-center justify-center md:px-24">
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor pb-5">
           Industries We Serve
@@ -63,7 +69,10 @@ const Industries = () => {
                 {card.desc}
               </p>
 
-              <div className=" flex items-center justify-center ">
+              <div
+                className=" flex items-center justify-center cursor-pointer"
+                onClick={handleNavigation}
+              >
                 <span className=" text-5xl text-primaryColor">-</span>
                 <h1 className=" font-CrimsonText font-bold text-2xl text-primaryColor">
                   {card.learnMore}

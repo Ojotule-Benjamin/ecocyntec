@@ -37,7 +37,7 @@ const workCultureData = [
 
 const OurWorkCultures = () => {
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center bg-white mx-auto mt-0 md:mt-20 px-2 md:px-10">
+    <div className="w-full h-auto flex flex-col items-center justify-center bg-backgroundColor mx-auto mt-0 md:mt-20 px-2 md:px-10">
       <div className=" flex flex-col items-center justify-center md:px-24">
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor pb-5">
           Our Work Culture

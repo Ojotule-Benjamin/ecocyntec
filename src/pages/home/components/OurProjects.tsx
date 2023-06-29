@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../../../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
 
 interface IprojectData {
   id: number;
@@ -30,8 +31,12 @@ const projectData = [
 ];
 
 const OurProjects = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("/projects");
+  };
   return (
-    <div className=" w-full h-auto flex flex-col items-center justify-center gap-4 py-10 ">
+    <div className=" w-full h-auto flex flex-col items-center justify-center gap-4 py-10 bg-backgroundColor">
       <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center ">
         Our Projects
       </h2>
@@ -45,6 +50,7 @@ const OurProjects = () => {
               alt={title}
               title={title}
               location={location}
+              onClick={handleNavigation}
             />
           );
         })}

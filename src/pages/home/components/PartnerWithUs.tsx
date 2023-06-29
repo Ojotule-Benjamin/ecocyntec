@@ -1,10 +1,16 @@
 import React from "react";
 import CustomButton from "../../../components/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const PartnerWithUs = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/contact");
+  };
   return (
     <div
-      className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 my-10"
+      className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 my-10 "
       style={{
         backgroundImage: `url(${require("../../../assets/PartnerWithUs.png")})`,
         backgroundSize: "cover",
@@ -23,6 +29,7 @@ const PartnerWithUs = () => {
       <CustomButton
         title="Contact Us"
         className=" hover:bg-white hover:text-textColor "
+        onClick={handleNavigation}
       />
     </div>
   );

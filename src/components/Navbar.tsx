@@ -23,7 +23,7 @@ const Navbar = () => {
   const currentRoute = window.location.pathname;
 
   return (
-    <div className=" w-full h-32  bg-white  z-10 fixed top-0 bottom-0">
+    <div className=" w-full h-32 bg-white z-10 fixed top-0 bottom-0">
       <div className=" flex items-center justify-between px-2 md:px-8">
         <div className="flex w-[200px] h-[112px]">
           <Link to={"/"}>

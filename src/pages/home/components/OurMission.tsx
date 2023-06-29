@@ -1,9 +1,14 @@
 import React from "react";
 import CustomButton from "../../../components/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const OurMission = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("/aboutUs");
+  };
   return (
-    <div className=" w-full h-96 mt-72 md:mt-20 md:h-[600px] flex flex-1 flex-col-reverse md:flex-row  ">
+    <div className=" w-full h-96 mt-72 md:mt-20 md:h-[600px] flex flex-1 flex-col-reverse md:flex-row bg-backgroundColor">
       <div className="w-full md:w-1/2 h-full p-2 md:p-5 flex-[0.5] bg-primaryColor flex flex-col items-center justify-center md:gap-4">
         <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-white">
           Our Mission
@@ -22,6 +27,7 @@ const OurMission = () => {
         <CustomButton
           title="Discover More"
           className=" w-[120px] h-[40px] md:w-[154px] md:h-[51px] text-xs md:text-base hover:bg-white hover:text-textColor border-2 border-white"
+          onClick={handleNavigation}
         />
       </div>
       <div className="w-full h-full md:w-1/2 flex-[0.5]">

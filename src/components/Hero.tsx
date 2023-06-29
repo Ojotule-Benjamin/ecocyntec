@@ -21,12 +21,6 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <div className="w-full " style={{ height: "calc(100vh - 128px)" }}>
       <div className=" w-full, h-full flex relative">
-        {/* <img
-          src={src || require("../assets/projectImg2.png")}
-          alt={alt}
-          className="w-full h-full  bg-red-700 object-cover "
-        /> */}
-
         <div
           className="w-full h-full bg-cover bg-no-repeat"
           style={backgroundImageStyle}

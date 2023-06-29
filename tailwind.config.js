@@ -11,6 +11,7 @@ module.exports = {
         textColor: "#005F41",
         textColorWhite: "#FFFAFA",
         textNav: "#AA985D",
+        backgroundColor: "FFFAFA",
       },
       screens: {
         sm: "640px",

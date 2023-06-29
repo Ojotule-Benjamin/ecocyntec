@@ -10,11 +10,17 @@ import OurProjects from "./components/OurProjects";
 import PartnerWithUs from "./components/PartnerWithUs";
 import OurWorkCultures from "./components/OurWorkCultures";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/services");
+  };
   return (
     <div
-      className="w-full h-full absolute top-32"
+      className="w-full h-full absolute top-32 bg-backgroundColor"
       style={{ height: "calc(100vh - 128px)" }}
     >
       <Hero
@@ -28,6 +34,7 @@ const Home = () => {
         button={
           <CustomButton
             title="Discover More"
+            onClick={handleNavigation}
             className="w-28 h-10 md:w-[154px] md:h-[51px] text-xs md:text-base text-white cursor-pointer border-2  border-white"
           />
         }

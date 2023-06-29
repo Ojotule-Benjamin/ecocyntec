@@ -1,5 +1,7 @@
 import React from "react";
 import Hero from "../../components/Hero";
+import WhoWeAre from "./components/WhoWeAre";
+import Footer from "../../components/Footer";
 
 const AboutUs = () => {
   return (
@@ -16,6 +18,8 @@ const AboutUs = () => {
          customized solutions that precisely align with your unique requirements.`}
         src={require("../../assets/hero1.png")}
       />
+      <WhoWeAre />
+      <Footer />
     </div>
   );
 };

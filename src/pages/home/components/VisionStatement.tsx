@@ -2,7 +2,7 @@ import React from "react";
 
 const VisionStatement = () => {
   return (
-    <div className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24">
+    <div className=" w-full h-96 flex flex-col items-center justify-center gap-4 py-10 px-3 md:px-24 bg-backgroundColor">
       <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center underline">
         Vision Statement
       </h2>

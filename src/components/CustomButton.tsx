@@ -2,6 +2,7 @@ import React from "react";
 
 type CustomButtonProps = {
   title: string;
+  //onClick: Function;
   onClick?: () => void;
   titleStyle?: string;
   className?: string;

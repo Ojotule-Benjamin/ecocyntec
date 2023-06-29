@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -9,8 +9,19 @@ import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import CustomButton from "./CustomButton";
 
 const Footer = () => {
+  const [email, setEmail] = useState<string>("");
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  const handleSubcribe = () => {
+    //console.log("pressed");
+    console.log("Subscribed to email:", email);
+    setEmail("");
+  };
+
   return (
-    <div className=" w-full h-auto md:h-[500px] md:px-8 gap-10 md:gap-20 flex flex-col-reverse md:flex-row bg-primaryColor  pb-10 ">
+    <div className=" w-full h-auto md:h-[500px] md:px-8 gap-10 md:gap-20 flex flex-col-reverse md:flex-row bg-primaryColor pb-10 ">
       <div className="w-full md:w-[30%] px-4 md:px-0 flex flex-col md:row items-center md:items-start gap-3 md:gap-8 ">
         <Link to={"/"}>
           <div className="hidden md:flex w-[100px] md:w-[200px] md:h-[112px] ">
@@ -123,10 +134,14 @@ const Footer = () => {
             <input
               className=" w-full h-12 md:h-14 bg-white text-textColor pl-3 outline-none "
               placeholder="Email"
+              name="email"
+              value={email}
+              onChange={handleEmailChange}
             />
             <CustomButton
               title="Subscribe"
-              className=" w-full h-12 md:h-14 flex items-center justify-center text-white bg-textColor hover:bg-white hover:text-textColor rounded-none"
+              className=" w-full h-12 md:h-14 flex items-center justify-center text-white bg-textColor hover:bg-white hover:text-textColor cursor-pointer rounded-none"
+              onClick={() => console.log("pressed")}
             />
           </div>
         </div>

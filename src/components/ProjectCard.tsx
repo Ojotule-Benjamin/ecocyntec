@@ -6,6 +6,7 @@ type ProjectCardProps = {
   alt?: string;
   title?: string;
   location?: string;
+  onClick?: () => void;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -13,9 +14,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   alt,
   title,
   location,
+  onClick,
 }) => {
   return (
-    <div className=" w-full  md:w-96 md:h-96 p-5 md:p-0">
+    <div className=" w-full  md:w-96 md:h-96 p-5 md:p-0 bg-backgroundColor">
       <div className=" h-96 md:h-[500px] relative rounded-md border-4 ">
         <div className="w-full h-full">
           <img src={src} alt={alt} className=" w-full h-full object-cover" />
@@ -31,6 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title="VIEW PROJECT"
             className="w-28 h-28 md:w-[154px] md:h-[51px] text-xs md:text-base text-white cursor-pointer border-2  border-white"
             titleStyle=" text-400"
+            onClick={onClick}
           />
         </div>
       </div>
