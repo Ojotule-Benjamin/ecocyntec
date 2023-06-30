@@ -1,7 +1,16 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const Partner = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    setTimeout(() => {
+      window.scroll(0, 0);
+      navigate("/");
+    });
+  };
+
   return (
     <div className="hidden w-full h-56 md:flex items-center justify-between gap-8 px-4 md:px-8 bg-[#F3F3F3] my-10">
       <h2 className="w-[15%] font-CrimsonText font-bold text-primaryColor text-2xl md:text-4xl px-3">

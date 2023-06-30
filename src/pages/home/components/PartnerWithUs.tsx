@@ -6,7 +6,10 @@ const PartnerWithUs = () => {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate("/contact");
+    setTimeout(() => {
+      window.scroll(0, 0);
+      navigate("/contact");
+    });
   };
   return (
     <div
@@ -28,7 +31,7 @@ const PartnerWithUs = () => {
       </p>
       <CustomButton
         title="Contact Us"
-        className=" hover:bg-white hover:text-textColor "
+        className="text-white hover:bg-white hover:text-textColor "
         onClick={handleNavigation}
       />
     </div>
