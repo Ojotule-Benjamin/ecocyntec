@@ -45,7 +45,9 @@ const Projects = () => {
               we are dedicated to providing top-quality engineering services and energy products to our clients.`}
         src={require("../../assets/hero1.png")}
       />
-      <p>projects will page will have the projects done</p>
+      <p className="text-center text-7xl italic py-20 text-primaryColor">
+        PROJECT PAGE IS STILL UNDER DEVELOPMENT
+      </p>
 
       <div className="w-full flex items-center justify-between flex-wrap">
         {projectData.map(({ img, location, title, id }: IprojectData) => {
