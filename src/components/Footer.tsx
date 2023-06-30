@@ -11,6 +11,10 @@ import CustomButton from "./CustomButton";
 const Footer = () => {
   const [email, setEmail] = useState<string>("");
 
+  const handleNavigation = () => {
+    window.scroll(0, 0);
+  };
+
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
@@ -101,12 +105,14 @@ const Footer = () => {
           <div className="w-full h-1/2 px-2 md:px-0 flex flex-row md:flex-col items-center justify-between ">
             <Link
               to={"/aboutUs"}
+              onClick={handleNavigation}
               className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white"
             >
               About Us
             </Link>
             <Link
               to={"/services"}
+              onClick={handleNavigation}
               className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white"
             >
               Services
@@ -119,6 +125,7 @@ const Footer = () => {
             </Link>
             <Link
               to={"/contact"}
+              onClick={handleNavigation}
               className=" font-CrimsonText font-semibold text-lg md:text-2xl text-white"
             >
               Contact
