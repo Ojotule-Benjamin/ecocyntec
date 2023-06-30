@@ -48,11 +48,7 @@ const Service = () => {
       </div>
 
       <div className="mb-5 md:mb-0 flex items-center justify-center">
-        <CustomButton
-          title="Back to Services"
-          onClick={handleGoBack}
-          className=" hover:border hover:opacity-70"
-        />
+        <CustomButton title="Back to Services" onClick={handleGoBack} />
       </div>
 
       <Partner />
