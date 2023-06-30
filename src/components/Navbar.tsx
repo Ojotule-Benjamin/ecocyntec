@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import SortOutlinedIcon from "@mui/icons-material/SortOutlined";
 import CloseIcon from "@mui/icons-material/Close";
@@ -16,10 +16,16 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState("");
 
   const handleIsOpen = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   const currentRoute = window.location.pathname;
 
   return (
@@ -32,19 +38,24 @@ const Navbar = () => {
         </div>
 
         <ul className=" hidden md:flex items-center gap-8">
-          {navLinks.map(({ name, to }) => (
-            <li key={name + to}>
-              <Link
-                to={to}
-                className={`hover:text-textNav text-primaryColor font-CrimsonText font-normal  text-xl 
-                text-${
-                  currentRoute ? "text-textNav font-bold" : "text-primaryColor"
-                }`}
-              >
-                {name}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map(({ name, to }) => {
+            return (
+              <li key={name + to} onClick={() => setSelected(name)}>
+                <Link
+                  to={to}
+                  className={` text-primaryColor font-CrimsonText font-normal text-xl 
+                
+                 ${
+                   selected === name
+                     ? "text-textNav font-bold"
+                     : "text-primaryColor"
+                 } `}
+                >
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <div className=" hidden md:flex items-center gap-2">
           <SearchIcon
@@ -77,22 +88,19 @@ const Navbar = () => {
       {/* mobile view */}
 
       {isOpen && (
-        <div className=" bg-slate-200 md:hidden p-4 absolute w-full">
-          <ul className="flex flex-col items-start gap-4 ">
+        <div className="modal bg-slate-200 md:hidden p-4 absolute w-full h-screen ">
+          <ul className="flex flex-col gap-10 items-start ">
             {navLinks.map(({ name, to }) => (
               <li
                 key={name + to}
-                className={`hover:text-textNav text-primaryColor font-CrimsonText font-medium text-lg text-${
-                  currentRoute === to
-                    ? "text-textNav font-bold"
-                    : "text-primaryColor"
-                }`}
+                className={` hover:text-textNav text-primaryColor font-CrimsonText font-medium text-2xl hover:border-b-4 border-b-primaryColor`}
+                onClick={handleLinkClick}
               >
                 <Link to={to}>{name}</Link>
               </li>
             ))}
           </ul>
-          <div className="md:hidden flex items-center gap-2 mt-3">
+          <div className="hidden md:flex items-center gap-2 mt-3">
             <SearchIcon
               className=" text-primaryColor w-7"
               style={{ fontSize: "30px" }}

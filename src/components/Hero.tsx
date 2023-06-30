@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({
           style={backgroundImageStyle}
         ></div>
 
-        <div className=" w-[90%] md:w-4/5 h-[90%] md:h-[403px] flex flex-col px-3 md:px-24 items-center justify-center gap-4 opacity-80 bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+        <div className=" w-[90%] md:w-4/5 h-[70%] md:h-[403px] flex flex-col px-3 md:px-24 items-center justify-center gap-4 opacity-80 bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
           <h2 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor text-center md:px-16">
             {title}
           </h2>

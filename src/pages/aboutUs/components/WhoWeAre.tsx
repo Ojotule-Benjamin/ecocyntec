@@ -17,16 +17,17 @@ const whoWeAreData = [
   },
   {
     id: 2,
-    title: "Mission Statement",
-    desc: `To be the leading provider of customer centric Engineering, Procurement, construction, and Production Facilities services and Project management
-      focused on delivering world class solutions and services for the energy industry.`,
+    title:
+      "Building a Sustainable Future: Our Commitment to Eco-Friendly Practices",
+    desc: `At Ecocyntec, we are deeply committed to promoting a sustainable future and minimizing our environmental impact. We believe in harnessing the power of eco-friendly practices to create a greener world. Our dedication to sustainability drives us to develop innovative solutions that optimize energy production, reduce carbon emissions, and preserve natural resources. Through our eco-conscious approach, we strive to lead the way in the energy industry by setting high standards for environmental stewardship. Join us in our journey towards a cleaner, healthier planet. Together, we can make a positive difference.`,
+
     img: require("../../../assets/whoWeAre2.png"),
   },
   {
     id: 3,
-    title: "Our Vision",
+    title: "Mission Statement",
     desc: `
-      Our Vision - To be the preferred energy services company with global recognition for customer centricity, integrity, commitment and target delivery.
+    To be the leading provider of customer centric Engineering, Procurement, construction, and Production Facilities services and Project management focused on delivering world class solutions and services for the energy industry.
            `,
     img: require("../../../assets/whoWeAre3.png"),
   },
@@ -52,7 +53,7 @@ const WhoWeAre = () => {
             />
 
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center py-3 md:py-0 md:p-10">
-              <h3 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor">
+              <h3 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-center text-primaryColor">
                 {item.title}
               </h3>
               <p className=" flex flex-col font-CrimsonText font-medium text-justify md:text-justify text-sm md:text-xl text-textColor">

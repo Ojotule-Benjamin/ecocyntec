@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const OurMission = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
+    window.scroll(0, 0);
     navigate("/aboutUs");
   };
   return (

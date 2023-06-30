@@ -33,6 +33,7 @@ const projectData = [
 const OurProjects = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
+    window.scroll(0, 0);
     navigate("/projects");
   };
   return (

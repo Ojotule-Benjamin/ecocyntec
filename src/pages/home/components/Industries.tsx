@@ -34,6 +34,7 @@ const Industries = () => {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
+    window.scroll(0, 0);
     navigate("/services");
   };
   return (

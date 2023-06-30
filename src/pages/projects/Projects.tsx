@@ -9,18 +9,18 @@ const projectData = [
     title: "Placeholder Text",
     location: "Lagos",
   },
-  {
-    id: 2,
-    img: require("../../assets/projectImg2.png"),
-    title: "Placeholder Text",
-    location: "London",
-  },
-  {
-    id: 3,
-    img: require("../../assets/projectImg3.png"),
-    title: "Placeholder Text",
-    location: "Qatar",
-  },
+  // {
+  //   id: 2,
+  //   img: require("../../assets/projectImg2.png"),
+  //   title: "Placeholder Text",
+  //   location: "London",
+  // },
+  // {
+  //   id: 3,
+  //   img: require("../../assets/projectImg3.png"),
+  //   title: "Placeholder Text",
+  //   location: "Qatar",
+  // },
 ];
 
 interface IprojectData {
@@ -45,15 +45,7 @@ const Projects = () => {
               we are dedicated to providing top-quality engineering services and energy products to our clients.`}
         src={require("../../assets/hero1.png")}
       />
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
-      <h1>projetcs</h1>
+      <p>projects will page will have the projects done</p>
 
       <div className="w-full flex items-center justify-between flex-wrap">
         {projectData.map(({ img, location, title, id }: IprojectData) => {
