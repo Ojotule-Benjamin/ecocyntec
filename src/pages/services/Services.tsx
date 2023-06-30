@@ -124,7 +124,7 @@ By choosing ECOCYNTEC as your construction partner, you can be confident in our 
   },
   {
     id: 6,
-    img: require("../../assets/whoWeAre2.png"),
+    img: require("../../assets/whoWeAre1.png"),
     title: "Project Management",
     titleDesc: `At ECOCYNTEC, we understand the critical role that effective project management plays in the success of energy projects. Our project managers possess a deep understanding of the energy industry, coupled with extensive expertise in managing complex projects across the entire energy value chain.`,
     desc: `We understand the complexities and challenges involved in managing energy projects. Our experienced project managers are equipped with the knowledge, skills, and tools to effectively plan, execute, and control projects of various scales and complexities. |
@@ -184,11 +184,11 @@ const Services = () => {
           We deliver best in class energy products , solutions and services
           according to international best practices.
         </p>
-        <div className="w-full h-full my-10 md:mt-20 flex items-center justify-around gap-10 flex-wrap">
+        <div className="w-full h-full my-10 md:mt-20 flex items-center justify-center gap-10 flex-wrap">
           {serviceData.map((service) => {
             return (
               <div
-                className="w-96 h-72 cursor-pointer"
+                className="w-80 h-72 cursor-pointer"
                 key={service.id}
                 onClick={() => handleNavigation(`${service.id}`, service)}
               >
