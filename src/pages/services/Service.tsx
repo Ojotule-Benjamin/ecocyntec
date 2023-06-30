@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
 import { useLocation } from "react-router-dom";
+import CustomButton from "../../components/CustomButton";
+import Partner from "../../components/Partner";
 
 const Service = () => {
   const location = useLocation();
@@ -38,6 +40,12 @@ const Service = () => {
           <div className=" w-full h-[25px] bg-gradient-to-t from-white to-emerald-700 shadow-md"></div>
         </div>
       </div>
+
+      <div className="mb-5 md:mb-0 flex items-center justify-center">
+        <CustomButton title="Back to Services" />
+      </div>
+
+      <Partner />
 
       <Footer />
     </div>
