@@ -4,9 +4,15 @@ import Footer from "../../components/Footer";
 import { useLocation } from "react-router-dom";
 import CustomButton from "../../components/CustomButton";
 import Partner from "../../components/Partner";
+import { useNavigate } from "react-router-dom";
 
 const Service = () => {
   const location = useLocation();
+  // Go back to the previous location
+  const navigate = useNavigate();
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   const { service } = location.state || {};
   const sentences = service.desc.split(" |");
@@ -42,7 +48,7 @@ const Service = () => {
       </div>
 
       <div className="mb-5 md:mb-0 flex items-center justify-center">
-        <CustomButton title="Back to Services" />
+        <CustomButton title="Back to Services" onClick={handleGoBack} />
       </div>
 
       <Partner />
