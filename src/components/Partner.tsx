@@ -25,7 +25,7 @@ const Partner = () => {
       </p>
       <CustomButton
         title="Discover More"
-        className="w-[15%] bg-white hover:bg-primaryColor hover:text-white text-[#00964A] border hover:border-white border-primaryColor cursor-pointer"
+        className="w-[15%] bg-white hover:bg-primaryColor hover:text-white text-[#00964A] border hover:border-white border-primaryColor opacity-100 cursor-pointer"
       />
     </div>
   );
