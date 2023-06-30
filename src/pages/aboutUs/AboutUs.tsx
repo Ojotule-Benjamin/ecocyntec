@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../components/Hero";
 import WhoWeAre from "./components/WhoWeAre";
 import Footer from "../../components/Footer";
+import Partner from "../../components/Partner";
 
 const AboutUs = () => {
   return (
@@ -19,6 +20,7 @@ const AboutUs = () => {
         src={require("../../assets/hero1.png")}
       />
       <WhoWeAre />
+      <Partner />
       <Footer />
     </div>
   );

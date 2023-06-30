@@ -9,6 +9,7 @@ import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Service from "./pages/services/Service";
 
 const Layout = () => {
   return (
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/services/service",
+        element: <Service />,
       },
       {
         path: "/projects",

@@ -34,28 +34,28 @@ const whoWeAreData = [
 
 const WhoWeAre = () => {
   return (
-    <div className=" w-full h-auto flex flex-col bg-white my-10">
+    <div className=" w-full h-auto flex flex-col bg-white mt-10">
       {whoWeAreData.map((item) => {
         const sentences = item.desc.split(" |");
 
         return (
           <div
             key={item.id}
-            className={`w-full flex flex-1 items-center justify-center gap-4 md:gap-0 bg-backgroundColor px-2 md:px-8  ${
-              item.id % 2 === 0 ? "flex-row-reverse" : null
+            className={`w-full md:flex flex-1 items-center justify-center gap-4 md:gap-0 bg-backgroundColor px-4 md:px-8 mb-10 md:mb-0  ${
+              item.id % 2 === 0 ? "flex-row md:flex-row-reverse " : ""
             }`}
           >
             <img
               src={item.img}
               alt=""
-              className=" w-1/2 h-[300px] md:h-[500px]  object-cover"
+              className=" w-full md:w-1/2 h-[300px] md:h-[500px] object-cover"
             />
 
-            <div className=" w-1/2 flex flex-col items-center justify-center md:p-10">
-              <h3 className=" font-CrimsonText font-bold text-4xl text-primaryColor">
+            <div className="w-full md:w-1/2 flex flex-col items-center justify-center py-3 md:py-0 md:p-10">
+              <h3 className=" font-CrimsonText font-bold text-2xl md:text-4xl text-primaryColor">
                 {item.title}
               </h3>
-              <p className=" flex flex-col font-CrimsonText font-medium text-justify text-xl text-textColor">
+              <p className=" flex flex-col font-CrimsonText font-medium text-justify md:text-justify text-sm md:text-xl text-textColor">
                 {sentences.map((sentence) => (
                   <span key={sentence}>
                     {sentence} <br />
